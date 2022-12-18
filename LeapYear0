@@ -1,0 +1,7 @@
+from calendar import isleap
+#y = 1582
+for y in range(1031,2022):
+    if (( y % 4) == 0 and (y % 100 !=0 or y % 400 == 0)):
+        print(y,'LeapYear.\t',isleap(y))
+    else:
+        print(y,'Not a LeapYear.\t',isleap(y))
