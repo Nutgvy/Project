@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    float w,h,bmi,h2;
+    float sum = 0;
+    do {
+    printf("\ninput weight(kg)= ");
+    scanf("%f",&w);
+    printf("\ninput height(cm)= ");
+    scanf(" %f",&h);
+    h2 = (h/100);
+    bmi = w/(h2*h2);
+    printf("\nweight = %0.3f \nheight = %0.3f \nbmi = %0.3f",w,h,bmi);
+    if(bmi>=23)
+        printf("\nResult = Over");
+    if(bmi<=18.5)
+        printf("\nResult = Lower");
+    else
+        printf("\nResult = Normal");
+    printf("\nIf you want to exit.Please enter a weight value of 0");
+    }
+    while (w != 0);
+    
+    return 0;
+}
