@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main()
+{
+  int a;
+  int sum = a;
+  scanf("%d",&sum);
+  
+  	if(sum>100 ){
+    	printf("error\n");
+    } 
+  	if(sum>=80 && sum<=100){
+    	printf("A\n");
+    } 
+    if(sum>=70 && sum<=79){
+    	printf("B\n");
+    } 
+    if(sum>=60 && sum<=69){
+    	printf("C\n");
+    } 
+    if(sum>=50 && sum<=59){
+    	printf("D\n");
+    } 
+    if(sum<50){
+    	printf("F\n");
+    } 
+        
+	return 0;
+}
