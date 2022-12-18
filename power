@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+	int x,y,a,b = 1;
+	scanf("%d", &x);
+    scanf("%d", &y);
+    for(a=1; a<=y;a++){
+    b=b*x;
+  } 
+    printf("%d",b);
+    
+  return 0;
+}
